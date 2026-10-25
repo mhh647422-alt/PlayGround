@@ -1,5 +1,17 @@
 /* ================= رفيق — main.js ================= */
 document.addEventListener('DOMContentLoaded', () => {
+  // صور الهوية (الشعار + الواجهة) مستضافة على CDN
+  const ASSET_MAP = {
+    'assets/logo.webp': 'https://d2lm3begjhzc49.cloudfront.net/generated-images/43e34b2e.webp',
+    'assets/hero.webp': 'https://d2lm3begjhzc49.cloudfront.net/generated-images/296a8b01.webp'
+  };
+  document.querySelectorAll('img[src]').forEach(img => {
+    const key = img.getAttribute('src');
+    if (ASSET_MAP[key]) img.src = ASSET_MAP[key];
+  });
+  const fav = document.querySelector('link[rel="icon"]');
+  if (fav && ASSET_MAP[fav.getAttribute('href')]) fav.href = ASSET_MAP[fav.getAttribute('href')];
+
   // سنة الحقوق
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
