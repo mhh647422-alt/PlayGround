@@ -1,18 +1,28 @@
-# PlayGround
+# رفيق — موقع وكالة رقمية متكاملة 🚀
 
-<!-- omgithub:readme:start -->
-## 🚀 Build, play, and remix with OMGithub
+موقع احترافي عربي (RTL) كامل مع **مساعد ذكي** يحاور الزوار مباشرة داخل الموقع.
 
-**Created using [OMGithub.com](https://omgithub.com).**
+## الصفحات
+- `index.html` — الرئيسية (هيرو، خدمات، مميزات، منهجية، آراء عملاء)
+- `about.html` — من نحن (القيم والأرقام)
+- `portfolio.html` — الأعمال مع فلترة تفاعلية
+- `contact.html` — تواصل معنا (نموذج + أسئلة شائعة)
 
-[![OMGithub](https://img.shields.io/badge/OMGithub-Open%20project-orange?style=for-the-badge)](https://omgithub.com/mhh647422-alt/PlayGround)
-[![GitHub](https://img.shields.io/badge/GitHub-Source-181717?logo=github&style=for-the-badge)](https://github.com/mhh647422-alt/PlayGround)
+## المساعد الذكي
+طبقتان:
+1. **تعمل فورًا بدون أي إعداد:** ردود ذكية مبنية على محتوى الموقع (`js/assistant.js` — قاعدة معرفة عربية قابلة للتعديل).
+2. **ذكاء اصطناعي حقيقي (اختياري):** إذا وُجد مفتاح `OPENAI_API_KEY` في متغيرات بيئة Vercel، يتحول المساعد تلقائيًا للردود عبر `/api/chat`.
 
-- 🎮 [Open the project](https://omgithub.com/mhh647422-alt/PlayGround).
-- ✨ [Remix this project](https://omgithub.com/?remix=mhh647422-alt%2FPlayGround).
-- 💻 [Explore the source](https://github.com/mhh647422-alt/PlayGround).
-- 🛠️ [Check build runs](https://github.com/mhh647422-alt/PlayGround/actions).
-- 🐛 [Report an issue](https://github.com/mhh647422-alt/PlayGround/issues).
-- 👤 [Explore the creator's projects](https://omgithub.com/mhh647422-alt).
-- 🌍 [Create with OMGithub](https://omgithub.com).
-<!-- omgithub:readme:end -->
+> ⚠️ لا يوجد أي أسرار في الكود — المفاتيح تُدار عبر متغيرات البيئة فقط.
+
+## النشر
+استاتيكي 100% — ينشر مباشرة على Vercel بدون build:
+- Build Command: فارغ
+- Output Directory: `.` (جذر المستودع)
+
+## التخصيص السريع
+- الألوان والهوية: `css/style.css` (متغيرات `:root`)
+- ردود المساعد: قائمة `KB` في `js/assistant.js`
+- بيانات التواصل: تذييل كل صفحة + صفحة التواصل
+
+صُنع بشغف 💜
